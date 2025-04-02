@@ -1,227 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cricket Product Feature Checklist</title>
-  <style>
-    /* Basic resets and styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      text-align: center;
-      color: #333;
-    }
-    .progress-container {
-      margin: 20px 0;
-      text-align: center;
-    }
-    .progress-bar {
-      width: 80%;
-      height: 20px;
-      background: #ddd;
-      border-radius: 10px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-    .progress {
-      height: 100%;
-      width: 0;
-      background: #4caf50;
-      transition: width 0.3s ease;
-    }
-    .feature-section {
-      margin: 20px 0;
-    }
-    .feature-section ul {
-      list-style: none;
-      padding: 0;
-    }
-    .feature-section li {
-      margin: 8px 0;
-      display: flex;
-      align-items: center;
-    }
-    .feature-section li input[type="checkbox"] {
-      margin-right: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricSocial Development Roadmap</title>
+    <style>
+        /* Basic Reset */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            background: #35424a;
+            overflow: hidden;
+            color: #ffffff;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            padding: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 20px;
+        }
+        .phase {
+            margin-bottom: 20px;
+        }
+        .phase h2 {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .feature-list {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Cricket Product Feature Checklist</h1>
-    <div class="progress-container">
-      <p>Completion Progress: <span id="progress-percentage">0%</span></p>
-      <div class="progress-bar">
-        <div class="progress" id="progress"></div>
-      </div>
+    <header>
+        <h1>CricSocial: 20-Phase Development Roadmap</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#phase1">Phase 1</a></li>
+            <li><a href="#phase2">Phase 2</a></li>
+            <li><a href="#phase3">Phase 3</a></li>
+            <!-- Add links for all phases -->
+            <li><a href="#phase20">Phase 20</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="phase1" class="phase">
+            <h2>Phase 1: Core User Experience & Authentication</h2>
+            <ul class="feature-list">
+                <li>Enhance user onboarding with cricket-specific profile details (preferred role, batting/bowling style)</li>
+                <li>Implement multi-method registration (email, social, mobile)</li>
+                <li>Add two-step verification and user verification badges</li>
+                <li>Create role-based access control (players, fans, coaches, administrators)</li>
+                <li>Enhance accessibility features (WCAG compliance)</li>
+            </ul>
+        </div>
+        <div id="phase2" class="phase">
+            <h2>Phase 2: Social Features Enhancement</h2>
+            <ul class="feature-list">
+                <li>Expand cricket-specific reaction system (beyond basic likes)</li>
+                <li>Develop cricket-themed polls and prediction modules</li>
+                <li>Implement content rewards and recognition system for quality content</li>
+                <li>Create content categorization system with cricket-specific tags</li>
+                <li>Develop community challenges and contest functionality</li>
+            </ul>
+        </div>
+        <div id="phase3" class="phase">
+            <h2>Phase 3: Stories and Reels System</h2>
+            <ul class="feature-list">
+                <li>Enhance stories with cricket-specific templates</li>
+                <li>Develop Cricket AR filters for stories (cricket equipment, effects)</li>
+                <li>Build Match Day story templates and designs</li>
+                <li>Create Reels implementation for short-form cricket content</li>
+                <li>Design algorithmic discovery for cricket stories/reels</li>
+            </ul>
+        </div>
+        <!-- Repeat similar blocks for all phases up to Phase 20 -->
+        <div id="phase20" class="phase">
+            <h2>Phase 20: Media & Content Platform</h2>
+            <ul class="feature-list">
+                <li>Create curated cricket news feed</li>
+                <li>Implement platform-specific editorial content</li>
+                <li>Build community journalism platform</li>
+                <li>Develop expert column system</li>
+                <li>Create comprehensive match previews/reviews</li>
+            </ul>
+        </div>
     </div>
-    <!-- Cricket-Specific Features -->
-    <div class="feature-section" id="cricket-specific">
-      <h2>Cricket-Specific Features</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Advanced ball-by-ball scoring with detailed statistics</li>
-        <li><input type="checkbox" class="feature-checkbox">Live match commentary system</li>
-        <li><input type="checkbox" class="feature-checkbox">Player performance predictions using historical data</li>
-        <li><input type="checkbox" class="feature-checkbox">Advanced cricket analytics dashboard</li>
-        <li><input type="checkbox" class="feature-checkbox">Virtual cricket coaching tools</li>
-        <li><input type="checkbox" class="feature-checkbox">Match highlight generation</li>
-        <li><input type="checkbox" class="feature-checkbox">Custom tournament creation and management</li>
-      </ul>
-    </div>
-    <!-- Social Features -->
-    <div class="feature-section" id="social-features">
-      <h2>Social Features</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Cricket-themed Stories filters and effects</li>
-        <li><input type="checkbox" class="feature-checkbox">Live streaming capabilities for matches</li>
-        <li><input type="checkbox" class="feature-checkbox">Voice/Video call feature for cricket discussions</li>
-        <li><input type="checkbox" class="feature-checkbox">Group chat rooms for match discussions</li>
-        <li><input type="checkbox" class="feature-checkbox">Post scheduling capabilities</li>
-        <li><input type="checkbox" class="feature-checkbox">Content categorization and tagging system</li>
-        <li><input type="checkbox" class="feature-checkbox">Enhanced content discovery algorithm</li>
-      </ul>
-    </div>
-    <!-- Community Features -->
-    <div class="feature-section" id="community-features">
-      <h2>Community Features</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Cricket team/club management system</li>
-        <li><input type="checkbox" class="feature-checkbox">Venue management and booking system</li>
-        <li><input type="checkbox" class="feature-checkbox">Equipment marketplace</li>
-        <li><input type="checkbox" class="feature-checkbox">Cricket coaching marketplace</li>
-        <li><input type="checkbox" class="feature-checkbox">Virtual cricket academy</li>
-        <li><input type="checkbox" class="feature-checkbox">Team recruitment platform</li>
-        <li><input type="checkbox" class="feature-checkbox">Local tournament organization tools</li>
-      </ul>
-    </div>
-    <!-- Technical Improvements -->
-    <div class="feature-section" id="technical-improvements">
-      <h2>Technical Improvements</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Offline scoring capability with sync</li>
-        <li><input type="checkbox" class="feature-checkbox">Real-time notifications system</li>
-        <li><input type="checkbox" class="feature-checkbox">Enhanced data visualization tools</li>
-        <li><input type="checkbox" class="feature-checkbox">Multi-language support</li>
-        <li><input type="checkbox" class="feature-checkbox">Advanced search functionality</li>
-        <li><input type="checkbox" class="feature-checkbox">Performance optimization</li>
-        <li><input type="checkbox" class="feature-checkbox">Image/video processing improvements</li>
-      </ul>
-    </div>
-    <!-- Mobile App Enhancements -->
-    <div class="feature-section" id="mobile-enhancements">
-      <h2>Mobile App Enhancements</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Native camera integration for better video capture</li>
-        <li><input type="checkbox" class="feature-checkbox">AR features for shot analysis</li>
-        <li><input type="checkbox" class="feature-checkbox">Live scoring widgets</li>
-        <li><input type="checkbox" class="feature-checkbox">Quick share functionality</li>
-        <li><input type="checkbox" class="feature-checkbox">Mobile-specific UI improvements</li>
-        <li><input type="checkbox" class="feature-checkbox">Push notification system</li>
-        <li><input type="checkbox" class="feature-checkbox">Offline content access</li>
-      </ul>
-    </div>
-    <!-- Monetization Features -->
-    <div class="feature-section" id="monetization-features">
-      <h2>Monetization Features</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Premium subscription tiers</li>
-        <li><input type="checkbox" class="feature-checkbox">In-app advertising system</li>
-        <li><input type="checkbox" class="feature-checkbox">Sponsored content platform</li>
-        <li><input type="checkbox" class="feature-checkbox">Virtual coaching sessions</li>
-        <li><input type="checkbox" class="feature-checkbox">Tournament entry fee system</li>
-        <li><input type="checkbox" class="feature-checkbox">Cricket equipment marketplace</li>
-        <li><input type="checkbox" class="feature-checkbox">Premium analytics access</li>
-      </ul>
-    </div>
-    <!-- Security & Privacy -->
-    <div class="feature-section" id="security-privacy">
-      <h2>Security & Privacy</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Two-factor authentication</li>
-        <li><input type="checkbox" class="feature-checkbox">Enhanced content moderation</li>
-        <li><input type="checkbox" class="feature-checkbox">Advanced user verification</li>
-        <li><input type="checkbox" class="feature-checkbox">Privacy control improvements</li>
-        <li><input type="checkbox" class="feature-checkbox">Data export capabilities</li>
-        <li><input type="checkbox" class="feature-checkbox">Content backup system</li>
-      </ul>
-    </div>
-    <!-- Integration Possibilities -->
-    <div class="feature-section" id="integration">
-      <h2>Integration Possibilities</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Professional cricket stats API integration</li>
-        <li><input type="checkbox" class="feature-checkbox">Weather API for match planning</li>
-        <li><input type="checkbox" class="feature-checkbox">Social media cross-posting</li>
-        <li><input type="checkbox" class="feature-checkbox">Calendar integration</li>
-        <li><input type="checkbox" class="feature-checkbox">Cricket news aggregation</li>
-        <li><input type="checkbox" class="feature-checkbox">Live scores from professional matches</li>
-        <li><input type="checkbox" class="feature-checkbox">Equipment retailer integrations</li>
-        <li><input type="checkbox" class="feature-checkbox">Analytics & Reporting integration</li>
-      </ul>
-    </div>
-    <!-- Analytics & Reporting -->
-    <div class="feature-section" id="analytics-reporting">
-      <h2>Analytics & Reporting</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Advanced player statistics</li>
-        <li><input type="checkbox" class="feature-checkbox">Team performance analytics</li>
-        <li><input type="checkbox" class="feature-checkbox">Tournament statistics</li>
-        <li><input type="checkbox" class="feature-checkbox">Engagement metrics</li>
-        <li><input type="checkbox" class="feature-checkbox">Content performance analytics</li>
-        <li><input type="checkbox" class="feature-checkbox">User behavior analytics</li>
-        <li><input type="checkbox" class="feature-checkbox">Custom report generation</li>
-      </ul>
-    </div>
-    <!-- User Experience -->
-    <div class="feature-section" id="user-experience">
-      <h2>User Experience</h2>
-      <ul>
-        <li><input type="checkbox" class="feature-checkbox">Improved onboarding flow</li>
-        <li><input type="checkbox" class="feature-checkbox">Customizable dashboards</li>
-        <li><input type="checkbox" class="feature-checkbox">Enhanced profile customization</li>
-        <li><input type="checkbox" class="feature-checkbox">Achievement system</li>
-        <li><input type="checkbox" class="feature-checkbox">Gamification elements</li>
-        <li><input type="checkbox" class="feature-checkbox">Interactive tutorials</li>
-        <li><input type="checkbox" class="feature-checkbox">Accessibility improvements</li>
-      </ul>
-    </div>
-  </div>
-  <script>
-    // JavaScript to update the progress bar based on checked features
-    const checkboxes = document.querySelectorAll('.feature-checkbox');
-    const progress = document.getElementById('progress');
-    const progressPercentage = document.getElementById('progress-percentage');
-
-    function updateProgress() {
-      let checkedCount = 0;
-      checkboxes.forEach(box => {
-        if (box.checked) checkedCount++;
-      });
-      const total = checkboxes.length;
-      const percent = Math.round((checkedCount / total) * 100);
-      progress.style.width = percent + '%';
-      progressPercentage.textContent = percent + '%';
-    }
-
-    // Add event listener for every checkbox change
-    checkboxes.forEach(box => {
-      box.addEventListener('change', updateProgress);
-    });
-
-    // Initialize progress bar on page load
-    updateProgress();
-  </script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
