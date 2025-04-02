@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricSocial Development Roadmap</title>
+    <style>
+        /* Basic Reset */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            background: #35424a;
+            overflow: hidden;
+            color: #ffffff;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            padding: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 20px;
+        }
+        .phase {
+            margin-bottom: 20px;
+        }
+        .phase h2 {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .feature-list {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CricSocial: 20-Phase Development Roadmap</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#phase1">Phase 1</a></li>
+            <li><a href="#phase2">Phase 2</a></li>
+            <li><a href="#phase3">Phase 3</a></li>
+            <!-- Add links for all phases -->
+            <li><a href="#phase20">Phase 20</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="phase1" class="phase">
+            <h2>Phase 1: Core User Experience & Authentication</h2>
+            <ul class="feature-list">
+                <li>Enhance user onboarding with cricket-specific profile details (preferred role, batting/bowling style)</li>
+                <li>Implement multi-method registration (email, social, mobile)</li>
+                <li>Add two-step verification and user verification badges</li>
+                <li>Create role-based access control (players, fans, coaches, administrators)</li>
+                <li>Enhance accessibility features (WCAG compliance)</li>
+            </ul>
+        </div>
+        <div id="phase2" class="phase">
+            <h2>Phase 2: Social Features Enhancement</h2>
+            <ul class="feature-list">
+                <li>Expand cricket-specific reaction system (beyond basic likes)</li>
+                <li>Develop cricket-themed polls and prediction modules</li>
+                <li>Implement content rewards and recognition system for quality content</li>
+                <li>Create content categorization system with cricket-specific tags</li>
+                <li>Develop community challenges and contest functionality</li>
+            </ul>
+        </div>
+        <div id="phase3" class="phase">
+            <h2>Phase 3: Stories and Reels System</h2>
+            <ul class="feature-list">
+                <li>Enhance stories with cricket-specific templates</li>
+                <li>Develop Cricket AR filters for stories (cricket equipment, effects)</li>
+                <li>Build Match Day story templates and designs</li>
+                <li>Create Reels implementation for short-form cricket content</li>
+                <li>Design algorithmic discovery for cricket stories/reels</li>
+            </ul>
+        </div>
+        <!-- Repeat similar blocks for all phases up to Phase 20 -->
+        <div id="phase20" class="phase">
+            <h2>Phase 20: Media & Content Platform</h2>
+            <ul class="feature-list">
+                <li>Create curated cricket news feed</li>
+                <li>Implement platform-specific editorial content</li>
+                <li>Build community journalism platform</li>
+                <li>Develop expert column system</li>
+                <li>Create comprehensive match previews/reviews</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
